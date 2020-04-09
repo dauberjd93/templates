@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/minecraftserver.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/dauberjd93/templates/master/minecraftserver.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>GameServers:</Category>
   <Name>dauberjd-skyfactory4-minecraftserver</Name>
@@ -10,7 +10,7 @@
   <Overview>
     skyfactory4-minecraftserver
   <Support></Support>
-  <Registry>https://registry.hub.docker.com/r/binhex/arch-minecraftserver/</Registry>
+  <Registry>https://hub.docker.com/r/dauberjd93/mineserversf4</Registry>
   <GitHub>https://github.com/dauberjd93/atskyfactory4</GitHub>
   <Repository>dauberjd93/atskyfactory4</Repository>
   <BindTime>true</BindTime>
@@ -40,7 +40,7 @@
     </Variable>
     <Variable>
       <Name>JAVA_MAX_THREADS</Name>
-      <Value>1</Value>
+      <Value>3</Value>
     </Variable>
     <Variable>
       <Name>UMASK</Name>
@@ -58,7 +58,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>/opt/minecraft/server</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
